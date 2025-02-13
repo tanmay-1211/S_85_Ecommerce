@@ -1,14 +1,9 @@
-# S_85_Ecommerce
-<br>
-E-Commerce Follow Along: Key Takeaways Project Goals Build a full-fledged e-commerce application using the MERN stack. Gain hands-on experience in real-world full-stack development.
+This milestone focused on securely handling user registration on the backend, including the crucial step of password encryption. This is essential for protecting user data and maintaining security best practices.
 
-Learning Outcomes Understand the structure of a MERN stack project. Set up project repositories and foundational tools. Master core functionalities: User authentication. Product and order management. Database schema design. Core Concepts REST API Design: Create endpoints for users, products, and orders. MongoDB Schema: Design meaningful and structured data models. Authentication: Implement secure login and registration systems. Backend Development: Use Node.js and Express for robust server-side APIs.
+Milestone 7: Backend Login Endpoint and Password Validation 🚀 ✅ Login Endpoint Implementation Created a backend route to handle user login. Accepted user credentials (email/username and password) from the frontend.
 
-Milestones Overview
+✅ User Authentication Process Retrieved the corresponding user from the database using the provided email. If the user does not exist, returned an error: "User does not exist." Used bcrypt.compare to compare the entered password with the stored hashed password. If the passwords matched, authenticated the user and proceeded to login. If they did not match, returned an authentication error.
 
-Project Overview Introduction to the MERN stack. Live demo of the final e-commerce application. Set up a GitHub repository with a README summarizing Milestone 1.
-Development Environment Setup Install tools: Node.js, npm, MongoDB, and VS Code. Initialize the project with npm init and install dependencies (e.g., express, mongoose, dotenv).
-Backend Development Create REST APIs for: User Authentication (Register/Login). Product Management (Add, update, delete, and retrieve products). Order Handling (Manage orders and transactions). Design MongoDB schemas for users, products, and orders. Implement middleware for validation and error handling.
-Frontend Development Set up the React project with create-react-app or Vite. Build key UI components: User Pages (Login, Registration, Profile). Product Pages (Listing, Search, Details). Order Pages (Cart, Checkout, Order History). Use React Router for navigation and manage state with Redux or Context API.
-Integration, Testing, and Deployment Integrate the frontend and backend using API calls. Test functionality and resolve bugs with tools like Postman.
-Deploy: Backend using Heroku, Render, or AWS. Frontend using Netlify or Vercel. Ensure the application is secure and production-ready. Final Deliverable A complete MERN-based e-commerce application featuring: Secure authentication. Product and order management. A responsive and user-friendly interface. Fully tested and deployed online.
+✅ Security Measures Ensured that passwords were stored as hashes using bcrypt to maintain security. Handled potential security vulnerabilities, such as brute-force attacks.
+
+✅ README Update Documented Milestone 7 progress in this README file. This milestone introduced the backend authentication process, enabling users to log in securely by verifying their credentials against stored, encrypted passwords. This is crucial for maintaining data security and user authentication in the application.
