@@ -7,7 +7,7 @@
     "dev": "nodemon/server.js",
     "start": "node server.js"
   },
-  "author": "Ashu",
+  "author": "Tanmay",
   "license": "ISC",
   "description": "",
   "dependencies": {
