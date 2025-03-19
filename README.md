@@ -1,10 +1,11 @@
-### **Milestone 18: Fetching Cart Products**  
-- ✅ **Backend Cart Retrieval Endpoint**  
-  - Created an endpoint to fetch all products inside a user's cart.  
-- ✅ **User-Based Filtering**  
-  - Implemented logic to retrieve cart products based on the logged-in user's email.  
-- ✅ **API Integration with Frontend**  
-  - Integrated the frontend cart page with the backend to fetch and display cart items.  
-- ✅ **Testing and Validation**  
-  - Ensured that the cart data retrieval process is working correctly.  
-  - Tested API responses for accuracy and efficiency.  
+## Milestone 22: Address API Integration 🌐
+
+✅ Backend Endpoint Implementation
+- Created an API endpoint to receive the address from the frontend.
+- Validated and stored the address in the `address` array inside the user collection.
+
+✅ Database Integration
+- Updated the user schema to ensure multiple addresses can be stored.
+- Implemented authentication and error handling for secure address updates.
+
+Now, users can add their address, and it will be stored successfully! 🚀
