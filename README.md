@@ -1,10 +1,12 @@
-### **Milestone 18: Fetching Cart Products**  
-- ✅ **Backend Cart Retrieval Endpoint**  
-  - Created an endpoint to fetch all products inside a user's cart.  
-- ✅ **User-Based Filtering**  
-  - Implemented logic to retrieve cart products based on the logged-in user's email.  
-- ✅ **API Integration with Frontend**  
-  - Integrated the frontend cart page with the backend to fetch and display cart items.  
-- ✅ **Testing and Validation**  
-  - Ensured that the cart data retrieval process is working correctly.  
-  - Tested API responses for accuracy and efficiency.  
+### Milestone 20: User Profile Page 🚀  
+
+✅ *Backend & API Integration*  
+- Created an endpoint to send **user profile data** (photo, name, email, and address).  
+- Implemented **authentication** and **error handling** for secure access.  
+- Integrated the frontend to fetch and display user details dynamically.  
+
+✅ *Frontend Profile Page*  
+- Designed a **Profile Page** displaying **profile photo, name, and email**.  
+- Added an **Address Section** with an **"Add Address"** button.  
+- Displayed **"No address found"** if no address is available.  
+- Ensured smooth **UI updates** when adding an address. 🚀  
