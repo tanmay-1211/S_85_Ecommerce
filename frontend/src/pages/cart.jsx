@@ -9,7 +9,7 @@ const Cart = () => {
   const navigate = useNavigate(); // Initialize navigate
 
   useEffect(() => {
-    fetch(`http://localhost:8000/api/v2/product/cartproducts?email=${'ashupatil1357@gmail.com'}`)
+    fetch(`http://localhost:8000/api/v2/product/cartproducts?email=${'tanmayskbhatt@gmail.com'}`)
       .then((res) => {
         if (!res.ok) {
           throw new Error(`HTTP error! status: ${res.status}`);
@@ -17,8 +17,9 @@ const Cart = () => {
         return res.json();
       })
       .then((data) => {
-        setProducts(data.cart.map(product => ({ quantity: product['quantity'], ...product['productId'] })));
-        console.log("Products fetched:", data.cart);
+        let allProducts=data.cart.map(product => ({ quantity: product['quantity'], ...product['productId'] }))
+        setProducts(allProducts);
+        console.log("Products fetched:",allProducts);
       })
       .catch((err) => {
         console.error("Error fetching products:", err);
@@ -40,8 +41,8 @@ const Cart = () => {
             <h1 className='text-2xl font-semibold'>Cart</h1>
           </div>
           <div className='w-full flex-grow overflow-auto px-3 py-2 gap-y-2'>
-            {products.map(product => (
-              <CartProduct key={product._id} {...product} />
+          {products.map((product) => (
+              <CartProduct  key={product._id} {...product} />
             ))}
           </div>
           {/* Place Order Button */}
