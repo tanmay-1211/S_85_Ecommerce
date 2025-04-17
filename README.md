@@ -1,13 +1,8 @@
-### Milestone 29: PayPal Integration for Online Payments 💳
+### Milestone 31: JWT Auth & Member CRUD 🔐
+✅ JWT Authentication
+- Implemented secure login and signup using JWT tokens.
+- Stored token in localStorage and protected member routes with auth middleware.
 
-✅ PayPal Developer Setup
-- Created a PayPal Developer account.
-- Accessed the PayPal Developer Dashboard.
-- Created a Sandbox account for testing transactions.
-- Copied and saved the Sandbox UserID for future reference.
-- Retrieved and stored the Client ID from the Sandbox account.
-
-✅ Payment Options on Order Confirmation Page
-- Added two payment options: Cash on Delivery (COD) and Online Payment.
-- Implemented radio buttons to allow users to select their preferred payment method.
-- When "Online Payment" is selected, PayPal buttons will be displayed dynamically.
+✅ Member CRUD + UI Enhancements
+- Added full Create, Read, Update, Delete features for gym members.
+- Enhanced UI with field icons, top banner, and improved layout for better experience.
